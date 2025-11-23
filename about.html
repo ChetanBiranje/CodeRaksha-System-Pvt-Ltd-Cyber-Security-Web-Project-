@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - CodeRaksha Cybersecurity</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family:'Poppins',sans-serif;margin:0;background:#131c35;color:#eaf0ff;}
+.sub-header {background:linear-gradient(rgba(17,53,102,0.93),rgba(27,79,161,.91)),url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=1200&q=80') center/cover; color:#fff; padding:75px 0 38px 0; text-align:center;}
+nav {display:flex; align-items:center; justify-content:space-between; padding:0 43px;}
+nav img {height:44px;}
+.nav-links { flex:1; text-align: right;}
+.nav-links ul { list-style:none; margin:0; padding:0;}
+.nav-links li { display:inline-block; margin:0 15px;}
+.nav-links a {color:#0df7ff; text-decoration:none; font-weight:600; font-size:1.09em; transition:color .14s;}
+.nav-links a:hover {color:#f87ab5;}
+.fa-bars,.fa-close{display:none;color:#fff;font-size:27px;cursor:pointer;}
+h1,h2,h3 {font-weight:700;}
+section {padding:41px 0;}
+.about-us .row {display:flex; flex-wrap:wrap; gap:34px; align-items:center;}
+.about-col {flex:1 1 320px; min-width:230px; color:#c7f6ff;}
+.about-col h1 {color:#33daf2;}
+.about-col p {color:#def4fd; margin-bottom:19px;}
+.about-col img {width:97%; border-radius:13px; box-shadow:0 5px 22px #13abea21;}
+.hero-btn {display:inline-block; background:#0df7ff;color:#12203c;padding:10px 32px; border-radius:5px; text-decoration:none;font-weight:600;font-size:1.09em;transition:.15s;}
+.hero-btn:hover {background:#2f148a; color:#fff;}
+.footer {background:#0d172e;color:#bceaff;text-align:center;padding:34px 0 15px 0;}
+.icons .fa {margin:0 8px;color:#1ff6e2;cursor:pointer;font-size:1.13em;}
+.icons .fa:hover{color:#f17097;}
+@media (max-width:900px){.about-us .row{flex-direction:column;gap:1.2em;}}
+@media (max-width:700px){
+  nav{flex-direction:column;padding:0;}
+  .nav-links{position:fixed; background:#021a37fa; height:100vh; width:158px; top:0; right:-200px; text-align:left; z-index:111; transition:.2s;}
+  .nav-links ul{margin-top:48px;}
+  .nav-links li{display:block;margin:19px 0;}
+  .fa-bars,.fa-close{display:block;}
+}
+</style>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CodeRaksha Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html" style="color:#09fff8;">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Pioneering Cybersecurity in India</h1>
+            <p>CodeRaksha System Pvt. Ltd is an Indian leader in cybersecurity, ethical hacking, and next-gen threat defense. Founded and led by certified ethical hackers, our mission is to secure businesses, startups, apps and digital infrastructure with advanced VAPT, security audits, and real-time incident response. We believe every company deserves world-class protection, regardless of scale.</p>
+            <p>Our solutions power the security posture of tech brands, finance, healthcare, SaaS, and government clients across India and globally. With proven expertise, transparency, and a passion for threat-hunting, we make digital transformation secure for all.</p>
+            <a href="contact.html" class="hero-btn">Contact Our Team</a>
+        </div>
+        <div class="about-col">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?fit=crop&w=600&q=80" alt="CodeRaksha Team">
+        </div>
+    </div>    
+</section>
+
+<section class="footer">
+    <h4>About CodeRaksha</h4>
+    <p>Leading cybersecurity & ethical hacking services for companies, apps, and startups. Protect your future—securely.</p>
+    <div class="icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by the CodeRaksha Team &copy; 2025</p>
+</section>
+
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - CodeRaksha Cybersecurity</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family:'Poppins',sans-serif;margin:0;background:#131c35;color:#eaf8ff;}
+.sub-header{background:linear-gradient(rgba(18,40,80,0.98),rgba(27,72,140,0.93)),url('https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?fit=crop&w=1200&q=80') center/cover; color:#fff; padding:80px 0 34px 0; text-align:center;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:0 45px;}
+nav img{height:44px;}
+.nav-links{flex:1;text-align:right;}
+.nav-links ul{list-style:none;margin:0;padding:0;}
+.nav-links li{display:inline-block;margin:0 15px;}
+.nav-links a{color:#0df7ff;text-decoration:none;font-weight:600;font-size:1.09em;transition:color .14s;}
+.nav-links a:hover{color:#f670ae;}
+.fa-bars,.fa-close{display:none;color:#fff;font-size:27px;cursor:pointer;}
+h1,h2,h3{font-weight:700;}
+section{padding:44px 0;}
+.services-container{background:#172c4dde;padding-bottom:37px;}
+.services-row{display:flex;flex-wrap:wrap;gap:33px;justify-content:center;}
+.service-block{background:linear-gradient(120deg,#1c3757 80%,#1ed9ec10 100%);border-radius:12px;flex:1 1 220px;min-width:230px;max-width:340px;padding:31px 25px;margin:8px 0;color:#e0feff;box-shadow:0 7px 20px #13abef18;transition:.17s;}
+.service-block:hover{background:#1e446b;color:#fffbc3;box-shadow:0 6px 25px #20cbe769;}
+.service-block i{font-size:2.2em;color:#10e3ed;margin-bottom:12px;}
+.service-block h3{color:#24dcfe;font-size:1.21em;margin-bottom:12px;}
+.service-block ul{margin:0;padding-left:26px;}
+.service-block ul li{font-size:1.05em;margin-bottom:7px;color:#f5f7ff;}
+@media (max-width:900px){.services-row{flex-direction:column;gap:1.9em;}}
+@media (max-width:700px){
+  nav{flex-direction:column;padding:0;}
+  .nav-links{position:fixed;background:#021a37fa;height:100vh;width:158px;top:0;right:-200px;text-align:left;z-index:111;transition:.2s;}
+  .nav-links ul{margin-top:46px;}
+  .nav-links li{display:block;margin:19px 0;}
+  .fa-bars,.fa-close{display:block;}
+}
+.footer{background:#0d172e;color:#bceaff;text-align:center;padding:35px 0 15px 0;}
+.icons .fa{margin:0 8px;color:#1ffae6;cursor:pointer;font-size:1.13em;}
+.icons .fa:hover{color:#f17097;}
+</style>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CodeRaksha Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html" style="color:#21ffed;">SERVICES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Services</h1>
+    <p>Professional cybersecurity & ethical hacking services - audited, proven, trusted.</p>
+</section>
+
+<section class="services-container">
+    <div class="services-row">
+        <div class="service-block">
+            <i class="fa fa-search"></i>
+            <h3>Penetration Testing <br> (VAPT)</h3>
+            <ul>
+                <li>Web, Mobile, API, Network Testing</li>
+                <li>OWASP Top 10 Assessments</li>
+                <li>Detailed Reporting & Re-Test</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-shield"></i>
+            <h3>Security Audit & Compliance</h3>
+            <ul>
+                <li>Compliance: ISO 27001, PCI-DSS, GDPR</li>
+                <li>Risk & Code Review</li>
+                <li>Business Security Consulting</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-bug"></i>
+            <h3>Vulnerability Assessment</h3>
+            <ul>
+                <li>Automated & Manual Scans</li>
+                <li>Patch Management Advisory</li>
+                <li>Cloud & Server Audit</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-lock"></i>
+            <h3>Incident Response & Forensics</h3>
+            <ul>
+                <li>24/7 Rapid Breach Response</li>
+                <li>Root Cause Analysis</li>
+                <li>Data Leak Remediation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="services-row">
+        <div class="service-block">
+            <i class="fa fa-mobile"></i>
+            <h3>App & API Security</h3>
+            <ul>
+                <li>Android/iOS App Pentesting</li>
+                <li>API Endpoint Security Review</li>
+                <li>Reverse Engineering Checks</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-rocket"></i>
+            <h3>Secure DevOps & CI/CD</h3>
+            <ul>
+                <li>DevSecOps Pipeline Setup</li>
+                <li>SAST/DAST Code Checks</li>
+                <li>Secrets, Token & IAM Audit</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-database"></i>
+            <h3>Cloud & Infra Security</h3>
+            <ul>
+                <li>AWS, Azure, GCP Security Review</li>
+                <li>Cloud Misconfiguration Scan</li>
+                <li>Container, K8s, VM audit</li>
+            </ul>
+        </div>
+        <div class="service-block">
+            <i class="fa fa-users"></i>
+            <h3>Security Training & Awareness</h3>
+            <ul>
+                <li>Employee & Developer Workshops</li>
+                <li>Red/Blue Team Drills</li>
+                <li>Phishing Simulation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About CodeRaksha</h4>
+    <p>India’s trusted cybersecurity & ethical hacking partner for businesses, startups, and government.<br>
+    <div class="icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by CodeRaksha Team &copy; 2025</p>
+</section>
+
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+</body>
+</html>

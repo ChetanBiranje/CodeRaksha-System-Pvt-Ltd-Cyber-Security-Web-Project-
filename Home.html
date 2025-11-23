@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeRaksha Cybersecurity Solutions</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #131c35;
+  color: #daf2f9;
+}
+.sub-header {
+  background: linear-gradient(rgba(13,34,80,.93), rgba(27,79,161,.88)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=1200&q=80') center/cover;
+  color: #fff;
+  padding: 80px 0 45px 0;
+  text-align: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+nav img { height: 44px; }
+.nav-links { flex:1; text-align: right;}
+.nav-links ul { list-style: none; margin: 0; padding: 0; }
+.nav-links li { display: inline-block; margin: 0 17px;}
+.nav-links a { color: #3fe3ff; text-decoration: none; font-weight: 600; font-size:1.09em; transition: color .18s;}
+.nav-links a:hover {color: #fa709a;}
+.fa-bars, .fa-close { display:none; color:#fff; font-size:27px; cursor:pointer;}
+
+h1, h2, h3, h4 {font-weight:700;}
+h1 {font-size:2.6em;}
+h2.section-title {color:#32cdf0; font-size:2em;margin-bottom:0;}
+section {padding:46px 0;}
+.course, .facility, .footer {background: #192245ee;}
+.row {display:flex; align-items: stretch; justify-content: center; gap:32px; flex-wrap:wrap;}
+.course-col, .facility-col {
+  background: #2b3454cf; color: #e5faff;
+  border-radius: 9px; box-shadow: 0 2px 22px #31dde811;
+  flex: 1 1 230px; min-width: 240px; margin:10px 0; padding: 27px 22px; transition:.13s;
+}
+.course-col:hover, .facility-col:hover {background:#2128b3d0; color:#ffd561;}
+.course-col h3 {color:#00e7ff; margin-bottom:8px; font-weight:700;}
+.facility-col img {height:70px; margin-bottom:13px;}
+.facility-col h3 {color:#27ffd4;}
+.footer {
+  background: #0e1426; color:#bceaff;
+  text-align:center; padding:36px 0 17px 0;
+}
+.icons .fa{ margin:0 8px; color:#33f0ea; cursor:pointer; font-size: 1.13em;}
+.icons .fa:hover{color:#f470b8;}
+@media (max-width: 700px){
+  nav {flex-direction:column; padding:0;}
+  .row {flex-direction:column;}
+  .nav-links{position:fixed; background:#011a37ea; height:100vh; width:160px; top:0; right:-200px; text-align:left; z-index:111; transition:.2s;}
+  .nav-links ul{margin-top:60px;}
+  .nav-links li{display:block; margin:22px 0;}
+  .fa-bars, .fa-close {display:block;}
+}
+</style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" style="display:inline-block;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CodeRaksha Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Welcome to CodeRaksha</h1>
+        <p>Your Cybersecurity & Ethical Hacking Partner</p>
+    </section>
+
+    <section class="course">
+        <h2 class="section-title">Core Services</h2>
+        <p>Best-in-class solutions to secure your digital assets and growth</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Penetration Testing</h3>
+                <p>Simulate cyber-attacks and uncover vulnerabilities before hackers do. Our ethical hacking experts find and help patch exploitable weaknesses in your network and web apps.</p>
+            </div>
+            <div class="course-col">
+                <h3>Security Audits</h3>
+                <p>Comprehensive security audit covering compliance checks, risk assessment, data protection, and secure coding analysis for your organization or startup.</p>
+            </div>
+            <div class="course-col">
+                <h3>Incident Response</h3>
+                <p>24/7 support for detecting, analyzing, and responding to data breaches, malware attacks, and security incidents to minimize damage and recover faster.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="facility">
+        <h2 class="section-title">Our Advantages</h2>
+        <p>Trusted by businesses, startups, and enterprises — powered by experience & innovation.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/3022/3022347.png" alt="Expert team">
+                <h3>Expert Team</h3>
+                <p>Certified ethical hackers & cybersecurity experts who love to solve real-world security problems.</p>
+            </div>
+            <div class="facility-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/4359/4359887.png" alt="VAPT toolkit">
+                <h3>Cutting-Edge VAPT Toolkit</h3>
+                <p>Premium-grade tools, automation, and latest technology for vulnerability assessment and reporting.</p>
+            </div>
+            <div class="facility-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/6187/6187665.png" alt="Dedicated support">
+                <h3>Dedicated Support</h3>
+                <p>Fast, reliable and confidential support from planning to post-assessment and risk mitigation.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>About CodeRaksha</h4>
+        <p>CodeRaksha System Pvt. Ltd delivers powerful cybersecurity and ethical hacking services in India and worldwide.<br>
+        We secure your business, apps, and clients so you can focus on what matters most.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> for secure digital future &copy; 2025 CodeRaksha</p>
+    </section>    
+
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+</body>
+</html>

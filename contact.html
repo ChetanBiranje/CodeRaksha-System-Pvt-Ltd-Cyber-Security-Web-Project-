@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - CodeRaksha Cybersecurity</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+body { font-family: 'Poppins', sans-serif; margin: 0; background: #131c35; color: #daf2f9; }
+.sub-header { background: linear-gradient(rgba(16,27,58,.97), rgba(33,89,129,.91)), url('https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?fit=crop&w=1200&q=80') center/cover; color: #fff; padding: 75px 0 50px 0; text-align: center;}
+nav { display:flex; align-items:center; justify-content:space-between; padding: 0 50px;}
+nav img { height: 44px; }
+.nav-links { flex:1; text-align: right;}
+.nav-links ul { list-style: none; margin: 0; padding: 0;}
+.nav-links li { display: inline-block; margin: 0 15px;}
+.nav-links a { color: #3fe3ff; text-decoration: none; font-weight: 600; font-size:1.09em; transition: color .18s;}
+.nav-links a:hover {color: #fa709a;}
+.fa-bars, .fa-close {display:none; color:#fff; font-size:27px; cursor:pointer;}
+h1 {font-size:2.2em; font-weight:700;}
+.location { text-align:center; background: #102841; }
+.location iframe { width:93%; max-width: 900px; margin-top:33px; min-height:280px; border-radius:12px; border:3px solid #0ef0fa; }
+.contact-us {background:#17213c; padding:40px 0; }
+.contact-us .row {display:flex; gap:33px; flex-wrap:wrap; justify-content:center;}
+.contact-col { flex:1 1 280px; background:#273865df; border-radius:10px; padding:29px 21px; color:#e2f8ff; margin:8px 0;}
+.contact-col div {display:flex; align-items:flex-start; margin-bottom:23px;}
+.contact-col div i {color:#30d4fd; font-size:1.45em; margin-top:4px; margin-right:14px;}
+.contact-col span h5 {margin:0 0 5px 0;}
+.contact-col span p {margin:0; color:#b6e9ff;}
+.contact-us input, .contact-us textarea {
+  width: 100%; padding:7px 11px; margin-bottom: 13px; border-radius:7px; border:none; background:#133057; color:#f4faff; font-size:1.03em;
+}
+.contact-us button {background:linear-gradient(92deg,#10eefb,#0ea8fa); border:none; color:#001b46; font-weight:700; border-radius:6px; padding:10px 25px; font-size:1.08em; cursor:pointer;}
+.contact-us button:hover {background:#32cdf0; color:#fff;}
+.footer { background:#0e1426; color:#bceaff; text-align:center; padding:36px 0 17px 0;}
+.icons .fa{ margin:0 8px; color:#33f0ea; cursor:pointer; font-size:1.15em;}
+.icons .fa:hover{color:#f470b8;}
+@media (max-width:700px){
+  nav {flex-direction:column; padding:0;}
+  .row {flex-direction:column;}
+  .nav-links{position:fixed; background:#011a37ea; height:100vh; width:160px; top:0; right:-200px; text-align:left; z-index:111; transition:.2s;}
+  .nav-links ul{margin-top:60px;}
+  .nav-links li{display:block; margin:22px 0;}
+  .fa-bars, .fa-close {display:block;}
+  .location iframe {min-height: 200px;}
+}
+</style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" style="display:inline-block;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CodeRaksha Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" style="color:#09fff8;">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact CodeRaksha</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://maps.google.com/maps?q=Camp%20Pune&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>CodeRaksha System Pvt. Ltd</h5>
+                        <p>India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 937157339</h5>
+                        <p>Mon-Sat 10AM - 7PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@coderaksha.com</h5>
+                        <p>Email us your query anytime!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="Contact " name="Contact" placeholder="Enter Your Contact Number" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="7" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form> 
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>About CodeRaksha</h4>
+        <p>CodeRaksha System Pvt. Ltd delivers advanced cybersecurity and ethical hacking services across India.<br>
+        We secure your business, apps, and clients so you can focus on what matters most—confidently.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> for a secure digital world &copy; 2025 CodeRaksha</p>
+    </section>    
+
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+</body>
+</html>

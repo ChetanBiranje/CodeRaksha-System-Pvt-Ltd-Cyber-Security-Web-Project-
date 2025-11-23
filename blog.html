@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeRaksha Blog - Cybersecurity Insights</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
+body {font-family:'Poppins',sans-serif;margin:0;background:#131c35;color:#eaf0ff;}
+.sub-header {background:linear-gradient(rgba(17,53,102,0.93),rgba(27,79,161,.91)),url('https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?fit=crop&w=1200&q=80') center/cover; color:#fff; padding:75px 0 38px 0; text-align:center;}
+nav {display:flex; align-items:center; justify-content:space-between; padding:0 40px;}
+nav img {height:44px;}
+.nav-links { flex:1; text-align: right;}
+.nav-links ul { list-style:none; margin:0; padding:0;}
+.nav-links li { display:inline-block; margin:0 15px;}
+.nav-links a {color:#0df7ff; text-decoration:none; font-weight:600; font-size:1.09em; transition:color .14s;}
+.nav-links a:hover {color:#f87ab5;}
+.fa-bars,.fa-close{display:none;color:#fff;font-size:27px;cursor:pointer;}
+h1,h2,h3 {font-weight:700;}
+section {padding:42px 0;}
+.blog-content {background:#1b2536;}
+.row {display:flex;flex-wrap:wrap;gap:3vw;}
+.blog-left, .blog-right {background: #24304e; border-radius:10px; margin:8px 0;}
+.blog-left {flex:2 1 330px;min-width:320px; padding:29px 27px; color:#ededfd;}
+.blog-left img {max-width:95%; border-radius:11px;}
+.blog-left h2 {color:#31caff;}
+.blog-left p {margin-bottom:13px; color:#cff6ff;}
+.comment-box {margin-top:39px;}
+.comment-form input, .comment-form textarea {
+  width:100%; padding:9px 10px; margin-bottom:13px; border-radius:6px; border:none; background:#10213b; color:#e6f0fe; font-size:1.01em;
+}
+.comment-form button {background:linear-gradient(94deg,#0df3ff,#357fff); border:none; color:#002b4a; font-weight:700;border-radius:6px;padding:10px 25px;font-size:1.09em;cursor:pointer;}
+.comment-form button:hover {background:#2edafa;color:#212f80;}
+
+.blog-right {flex:1 1 210px;min-width:180px;padding:23px 16px;color:#91eefd;}
+.blog-right h3 {color:#45ecc7; margin-bottom:16px;}
+.blog-right div {display:flex; justify-content:space-between; border-bottom:1.2px solid #193254; margin:11px 0 5px 0; font-size:1.04em;}
+.footer {background:#0d172e;color:#bceaff;text-align:center;padding:34px 0 15px 0;}
+.icons .fa {margin:0 8px;color:#1ff6e2;cursor:pointer;font-size:1.13em;}
+.icons .fa:hover{color:#f17097;}
+@media (max-width:900px){.row{flex-direction:column;}}
+@media (max-width:700px){
+  nav{flex-direction:column;padding:0;}
+  .nav-links{position:fixed; background:#021a37fa; height:100vh; width:158px; top:0; right:-200px; text-align:left; z-index:111; transition:.2s;}
+  .nav-links ul{margin-top:50px;}
+  .nav-links li{display:block;margin:19px 0;}
+  .fa-bars,.fa-close{display:block;}
+}
+</style>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CodeRaksha Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="blog.html" style="color:#09fff8;">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Cybersecurity & Hacking: Insights, News & Tips</h1>
+</section>
+
+<section class="blog-content">
+<div class="row">
+<div class="blog-left">
+    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?fit=crop&w=800&q=80" alt="Cybersecurity blog main image">
+    <h2>2025: Top Cyber Threats & Response Best Practices</h2>
+    <p>Cybersecurity in 2025 is more important than ever. From ransomware to deepfake phishing, advanced hacker groups are targeting companies and startups daily.</p>
+    <p>Our expert team at CodeRaksha brings you the latest attack trends, prevention strategies, VAPT results, and real-world breach case studies. This blog covers actionable security tips for businesses, devs, and IT admins:</p>
+    <ul>
+      <li>🔍 How to identify next-gen phishing & malware attacks</li>
+      <li>🛡️ Importance of continuous security assessments & ethical hacking</li>
+      <li>📊 Cybersecurity compliance, audit, and secure coding best practices</li>
+    </ul>
+    <p>Stay updated on real incidents, ransomware trends, cloud & web hack tactics, and how to harden your stack — direct from certified ethical hackers at CodeRaksha.</p>
+    <div class="comment-box">
+        <h3>Leave a Comment</h3>
+        <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+        </form>
+    </div>
+</div>
+<div class="blog-right">
+        <h3>Post Categories</h3>
+        <div><span>Penetration Testing</span> <span>21</span></div>
+        <div><span>Cloud Security</span> <span>15</span></div>
+        <div><span>Vulnerability Research</span> <span>27</span></div>
+        <div><span>Compliance & Audit</span> <span>14</span></div>
+        <div><span>Incident Response</span> <span>17</span></div>
+        <div><span>Mobile App Security</span> <span>12</span></div>
+        <div><span>Startup Security</span> <span>8</span></div>
+</div> 
+</div>
+</section>
+
+<section class="footer">
+    <h4>About CodeRaksha</h4>
+    <p>India’s trusted cybersecurity & ethical hacking partner. Follow our blog for latest cyber threats, case studies, and security tips.<br>
+    <div class="icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by CodeRaksha Team &copy; 2025</p>
+</section>    
+
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
+</script>
+</body>
+</html>
